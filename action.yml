@@ -1,0 +1,15 @@
+name: 'thank you'
+description: 'Amine pull requests'
+author: 'Amine'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+  TENOR_TOKEN:
+    description: 'Tenor API token'
+    required: true
+
+runs:
+  using: 'node16'
+  script: 'dist/index.js'
